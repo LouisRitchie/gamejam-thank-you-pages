@@ -14,7 +14,7 @@ module.exports = function () {
             opacity: 1
         }, 600, 'easeOutCubic');
 };
-},{"jquery":6,"velocity-animate":7}],2:[function(require,module,exports){
+},{"jquery":5,"velocity-animate":6}],2:[function(require,module,exports){
 var $ = window.jQuery = window.$ = require('jquery');
 var velocity = require('velocity-animate');
 
@@ -31,27 +31,7 @@ module.exports = function () {
         }, 600, 'easeOutCubic');
 };
 
-},{"jquery":6,"velocity-animate":7}],3:[function(require,module,exports){
-var $ = window.jQuery = window.$ = require('jquery');
-var velocity = require('velocity-animate');
-
-module.exports = function () {
-    $('.section-3 .text')
-        .velocity({
-            translateX: '-50%',
-            translateY: '-50%',
-            scale: 0.4,
-            opacity: 0
-        }, 0)
-        .delay(100)
-        .velocity({
-            translateX: '-50%',
-            translateY: '-50%',
-            scale: 1,
-            opacity: 1
-        }, 600, 'easeOutCubic');
-};
-},{"jquery":6,"velocity-animate":7}],4:[function(require,module,exports){
+},{"jquery":5,"velocity-animate":6}],3:[function(require,module,exports){
 'use strict';
 
 var $ = require('jquery');
@@ -59,7 +39,6 @@ var fullpage = require('fullpage.js');
 
 var executeAnimationOfSection1 = require('./animations/section-1');
 var executeAnimationOfSection2 = require('./animations/section-2');
-var executeAnimationOfSection3 = require('./animations/section-3');
 
 $(document).ready(function () {  
     // disable velocity mobileHA because it overrides the transform values we defined in stylesheets.
@@ -78,10 +57,6 @@ $(document).ready(function () {
                     $('#btn-next').show();
                     executeAnimationOfSection2();
                     break;
-                case 3:
-                    $('#btn-next').hide();          // hide btn-next when reaching the last section.
-                    executeAnimationOfSection3();
-                    break;
             }
         }
     });
@@ -98,7 +73,7 @@ function hideAnimatedItems() {
     });
 }
 
-},{"./animations/section-1":1,"./animations/section-2":2,"./animations/section-3":3,"fullpage.js":5,"jquery":6}],5:[function(require,module,exports){
+},{"./animations/section-1":1,"./animations/section-2":2,"fullpage.js":4,"jquery":5}],4:[function(require,module,exports){
 /*!
  * fullPage 2.9.2
  * https://github.com/alvarotrigo/fullPage.js
@@ -3179,7 +3154,7 @@ function hideAnimatedItems() {
     };
 });
 
-},{"jquery":6}],6:[function(require,module,exports){
+},{"jquery":5}],5:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.4
  * http://jquery.com/
@@ -12995,7 +12970,7 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /*! VelocityJS.org (1.4.2). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 
 /*************************
@@ -17703,6 +17678,6 @@ return jQuery;
  Velocity, however, doesn't make this distinction. Thus, converting to or from the % unit with these subproperties
  will produce an inaccurate conversion value. The same issue exists with the cx/cy attributes of SVG circles and ellipses. */
 
-},{}]},{},[4])
+},{}]},{},[3])
 
 //# sourceMappingURL=bundle.js.map

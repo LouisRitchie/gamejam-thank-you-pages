@@ -5,7 +5,6 @@ var fullpage = require('fullpage.js');
 
 var executeAnimationOfSection1 = require('./animations/section-1');
 var executeAnimationOfSection2 = require('./animations/section-2');
-var executeAnimationOfSection3 = require('./animations/section-3');
 
 $(document).ready(function () {  
     // disable velocity mobileHA because it overrides the transform values we defined in stylesheets.
@@ -23,10 +22,6 @@ $(document).ready(function () {
                 case 2:
                     $('#btn-next').show();
                     executeAnimationOfSection2();
-                    break;
-                case 3:
-                    $('#btn-next').hide();          // hide btn-next when reaching the last section.
-                    executeAnimationOfSection3();
                     break;
             }
         }
