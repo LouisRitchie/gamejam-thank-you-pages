@@ -11,7 +11,7 @@ html, body {
 }
 
 h1 {
-  max-width: 700px;
+  max-width: 500px;
   position: absolute;
   padding: 12px;
   border-radius: 5px;
@@ -29,4 +29,3 @@ h1 a {
 h1 a:visited {
   color: #888;
 }
-
