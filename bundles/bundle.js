@@ -67,7 +67,6 @@ $(document).ready(function () {
     
     $('#fullpage').fullpage({
         menu: '#menu',
-        paddingTop: $('.header').outerHeight(),     // paddingTop should be the same as the header's height.
         afterLoad: function (anchorLink, index) { 
             hideAnimatedItems();                   // reset all animated-items to their default styles.
             switch (index) {
@@ -98,6 +97,7 @@ function hideAnimatedItems() {
         opacity: 0
     });
 }
+
 },{"./animations/section-1":1,"./animations/section-2":2,"./animations/section-3":3,"fullpage.js":5,"jquery":6}],5:[function(require,module,exports){
 /*!
  * fullPage 2.9.2

@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Thank you ___</title>
-  <link href="styles/Vidage.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Exo+2:300" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="stylesheet" href="bundles/bundle.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300" rel="stylesheet">
   </head>
 
   <body>
@@ -39,11 +48,23 @@
 
       <a href="http://globalgamejam.org/2017/jam-sites/downtown-victoria/games">View the games on the Global Game Jam website.</a><br/>
             </p>
+
+            <div id="slideshow">
+               <div><img src="assets/1.jpg"></div>
+               <div><img src="assets/2.jpg"></div>
+               <div><img src="assets/3.jpg"></div>
+               <div><img src="assets/4.jpg"></div>
+               <div><img src="assets/5.jpg"></div>
+               <div><img src="assets/6.jpg"></div>
+               <div><img src="assets/7.jpg"></div>
+               <div><img src="assets/8.jpg"></div>
+            </div>
+
             <p>
 
       We couldn't have done Global Game Jam 2017 without your support.<br/>
 
-      Thank you, Kano Apps! <br/>
+      Thank you, Kano Apps! <br/><br/><br/>
       
       UVic GameDev Club<br/>
       <img src="uvgd-small.png" alt="UVic GameDev Logo"></img>
@@ -69,32 +90,28 @@
     <i class="fa fa-angle-down"></i>
 </button>
 
+<script>
+
+</script>
+
 <script src="bundles/bundle.js"></script>
           
   </body>
-  <script src="scripts/Vidage.js"></script>
+  <script src="node_modules/vidage/dist/scripts/Vidage.js"></script>
   <script>
-      new Vidage(selector);
+      new Vidage('#VidageVideo');
+
+      console.log("gets here");
+      $("#slideshow > div:gt(0)").hide();
+
+      setInterval(function() { 
+        console.log("gets here2");
+        $('#slideshow > div:first')
+          .fadeOut(1000)
+          .next()
+          .fadeIn(1000)
+          .end()
+          .appendTo('#slideshow');
+      },  3000);
   </script>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Fullpage-Boilerplate</title>
-
-    <link rel="shortcut icon" type="image/png" href="">
-
-    <link rel="stylesheet" href="bundles/bundle.css">
-</head>
-<body>
-</body>
 </html>
