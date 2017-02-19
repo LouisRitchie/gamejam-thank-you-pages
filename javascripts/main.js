@@ -20,7 +20,7 @@ $(document).ready(function () {
                     executeAnimationOfSection1();
                     break;
                 case 2:
-                    $('#btn-next').show();
+                    $('#btn-next').hide();
                     executeAnimationOfSection2();
                     break;
             }
