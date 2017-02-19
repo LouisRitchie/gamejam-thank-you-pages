@@ -13,7 +13,6 @@ $(document).ready(function () {
     
     $('#fullpage').fullpage({
         menu: '#menu',
-        paddingTop: $('.header').outerHeight(),     // paddingTop should be the same as the header's height.
         afterLoad: function (anchorLink, index) { 
             hideAnimatedItems();                   // reset all animated-items to their default styles.
             switch (index) {
