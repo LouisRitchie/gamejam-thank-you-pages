@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 16px;
 }
 
@@ -98,23 +98,22 @@ button, a {
 }
 
 .section-1 {
-  background-color: #EA9292;
+  background-color: white;
 }
 
-.section-1 .text {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  color: #fff;
-  font-size: 2.5rem;
-  white-space: nowrap;
+.section-1 * {
+  overflow: hidden;
+}
+
+.section-1 .Vidage__video {
+  opacity: .725;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .section-2 {
-  background-color: #5cc2f1;
+  background-color: white;
 }
 
 .section-2 .text {
@@ -129,8 +128,27 @@ button, a {
   white-space: nowrap;
 }
 
+.section-2 h1 {
+  max-width: 500px;
+  position: absolute;
+  padding: 12px;
+  border-radius: 5px;
+  left: 40px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.section-2 h1 a {
+  color: #149;
+}
+
+.section-2 h1 a:visited {
+  color: #888;
+}
+
 .section-3 {
-  background-color: #565f77;
+  background-color: white;
 }
 
 .section-3 .text {
