@@ -1,12 +1,5 @@
 # Global Game Jam thank you websites
 
-## Dependencies
-
-1. [Font Awesome](https://fortawesome.github.io/Font-Awesome/)     --> Icon font set.
-2. [fullPage.js](http://alvarotrigo.com/fullPage/)      --> The full-screen scrolling engine.
-3. [jQuery](https://jquery.com/)           --> Used for manipulating DOM, also as the dependency of fullPage.js.
-4. [Normalize.css](https://necolas.github.io/normalize.css/)    --> Used for CSS resets.
-5. [Velocity.js](http://julian.com/research/velocity/)      --> The animation engine.
 
 ## Directory Layout
 
