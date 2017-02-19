@@ -114,11 +114,12 @@ button, a {
 }
 
 .section-2 {
+  padding-top: 80px;
   background-color: white;
 }
 
 .section-2 .text {
-  padding-bottom: 80px;
+  padding-bottom: 120px;
   height: 100%;
   margin: 0;
   color: black;
@@ -158,8 +159,8 @@ button, a {
 .section-2 #slideshow {
   margin: 50px auto;
   position: relative;
-  width: 240px;
-  height: 240px;
+  width: 420px;
+  height: 340px;
   padding: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
@@ -180,14 +181,6 @@ button, a {
 
 .section-2 br {
   margin-top: 15px;
-}
-
-.section-2 p a {
-  color: #149;
-}
-
-.section-2 p a:visited {
-  color: #888;
 }
 
 .section-3 {
